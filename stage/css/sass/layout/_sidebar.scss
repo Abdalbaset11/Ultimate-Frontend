@@ -7,6 +7,10 @@
         padding: 15px;
         height: 100%;
         background-color: rgb(160, 159, 159);
-        transition: 0.5s;
+        transition: 0.3s;
+
+        &.no-sidebar {
+            left: -250px;
+        }
     }
 }
