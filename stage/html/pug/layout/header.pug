@@ -1,7 +1,6 @@
 .header
     i.fa.fa-exchange.fa-lg.toggle-sidebar
     // Notification 
-    
     .dropdown.notifications-container.header-icon
         i#notification.fa.fa-bell.fa-lg.togglr-notifiction(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notification')
@@ -23,3 +22,32 @@
                         | You Got Email From Blah Blah 
             .noti-foot.text-center: a(href="#") View All Notifiction
     i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.rounded-circle(src="imgs/avatar.jpg", alt="Avatar User")
+            span.user Abdalbaset
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info  
+                h3 Abdalbaset
+                p Premium Member
+            hr 
+            ul.activites-list.list-unstyled
+                li Add Comment on Post "Blah Blah Blah"
+                li Add Comment on Post "Blah Blah Blah"
+                li Add Comment on Post "Blah Blah Blah"
+                li Add Comment on Post "Blah Blah Blah"
+            hr
+            .row.usermenu-links
+                .col
+                    .link-box 
+                        i.fa.fa-gear.fa-lg.fa-fw
+                        span Settings
+                .col
+                    .link-box 
+                        i.fa.fa-user.fa-lg.fa-fw
+                        span My Profle
+                .col
+                    .link-box 
+                        i.fa.fa-power-off.fa-lg.fa-fw
+                        span Logout
