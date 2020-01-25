@@ -1,2 +1,23 @@
 .header
     i.fa.fa-exchange.fa-lg.toggle-sidebar
+    // Notification 
+    .dropdown.notifications-container
+        i#notification.fa.fa-bell.fa-lg.togglr-notifiction(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notification')
+            .noti-head
+                | Notifictions
+                span 50
+            .noti-content 
+                ul.list-unstyled 
+                    li
+                        i.fa.fa-envelope-o
+                        | You Got Email From Blah Blah 
+                ul.list-unstyled 
+                    li
+                        i.fa.fa-envelope-o
+                        | You Got Email From Blah Blah 
+                ul.list-unstyled 
+                    li
+                        i.fa.fa-envelope-o
+                        | You Got Email From Blah Blah 
+            .noti-foot.text-center: a(href="#") View All Notifiction
