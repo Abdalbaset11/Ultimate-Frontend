@@ -1,20 +1,14 @@
-$themes: (
-    green-theme: (
-        color: #16a085
-    ),
-    blue-theme: (
-        color: #2980b9;
-    )
-    ),
-    red-theme: (
-        color: #c0392b;
-    )
-);
+$themes: (green-theme: (color: #16a085), blue-theme: (color: #2980b9), red-theme: (color: #c0392b));
 
-@each $theme, $map in $themes {
-    .#{$theme} {
-        .classname {
-            color: map-get($map, color);
-        }
-    }
+@each $theme,
+$map in $themes {
+	.#{$theme} {
+		.page {
+			.page-head {
+				.page-title {
+					color: map-get($map, color);
+				}
+			}
+		}
+	}
 }
